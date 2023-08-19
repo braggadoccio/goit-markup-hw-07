@@ -61,10 +61,30 @@ body {
 }
 
 .container {
-  width: 1200px;
-  padding: 0 15px;
+  /*width: 1200px;*/
+  /*width: 428px;*/
+  /*padding: 0 15px;*/
   margin: 0 auto;
+
+  @media screen and (min-width: 428px) {
+    width: 428px;
+    /*padding: 0 15px;
+    margin: 0 auto;*/
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    /*padding: 0 15px;*/
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1158px) {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
 }
+
 
 .menu,
 .navigation,
@@ -139,11 +159,12 @@ body {
   margin-left: auto;
 }
 
-.nav-menu .item:not(:last-child),
+.nav-menu .item:not(:last-child)
 .contacts-menu .item:not(last-child) {
   margin-right: 50px;
 }
 
+    /*gap: 40px;*/ 
 .nav-menu .page,
 .contacts-menu .contact {
   font-weight: 500;
@@ -187,16 +208,27 @@ body {
     url(../images/people-office-bg.png);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
 }
 
 .hero-title {
-  font-size: 56px;
+  font-size: 36px;
+  font-style: normal;
   font-weight: 700;
-  line-height: 1.07;
-  letter-spacing: 0.06em;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
   color: var(--white);
-  margin-bottom: 30px;
+  margin-bottom: 66px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    margin-bottom: 30px;
+  }
 }
 
 .benefits .title {
@@ -215,26 +247,61 @@ body {
 }
 
 .benefits .item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  width: 100%;
+  margin-bottom: 72px ;
+  
+  @media screen and (min-width: 768px) {
+    width: 356px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    margin-top: 30px; 
+  }
+  
 }
 
 .benefits .icon {
-  width: 264px;
-  height: 112px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8px;
-  background-color: var(--cloud);
+  display: none;
+
+  @media screen and (min-width: 1158px) {
+    width: 264px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    background-color: var(--cloud);
+  }
+  
 }
 
 .benefits .description {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
   color: var(--slate);
   line-height: 1.71;
-  font-size: 16px;
-  font-weight: 400;
+  letter-spacing: 0.32px;
+  
+
+  @media screen and (min-width: 1158px) {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--slate);
+    line-height: 24px; 
+    letter-spacing: 0.32px;
+    
+  }
+  
 }
 
 .list.what-we-do {
@@ -500,13 +567,29 @@ body {
 /* Section */
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /*padding-top: 120px;
+  padding-bottom: 120px;*/
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+  @media screen and (min-width: 1158px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .section.no-top-padding {
-  padding-top: 0;
+  display: none;
+
+  @media screen and (min-width: 1158px){
+    display: flex;
+    padding-top: 0;
+    
+  }
 }
+/*.section.no-top-padding {
+  padding-top: 0;
+}*/
 
 .partners {
   display: flex;
