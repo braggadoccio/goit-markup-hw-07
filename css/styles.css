@@ -103,7 +103,7 @@ body {
     /*margin-top: 25.5px;*/
     /*margin-bottom: 25.5px;*/
     margin-left: 16px;
-  }*/
+  }
 }
 
 .nav-menu {
@@ -701,7 +701,7 @@ body {
 
 .page-header {
   height: 70px;
-  border-bottom: 0px solid var(--cornflower);
+  border-bottom: 1px solid var(--cornflower);
 
   @media screen and (min-width: 768px) {
     height: 72px;
