@@ -25,6 +25,7 @@
   <body>
     <!--Header-->
     <header class="page-header">
+      <!--Navigation-->
       <div class="container menu">
         <nav class="navigation">
           <a class="logo-link" href="./index.html"
@@ -43,11 +44,12 @@
           </ul>
         </nav>
 
+        <!--Contacts-->
         <ul class="contacts-menu list">
           <li class="contacts-menu-item">
             <a class="contact-link link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
-            > 
+            >
           </li>
           <li class="contacts-menu-item">
             <a class="contact-link link" href="tel:+110001111111"
@@ -55,85 +57,104 @@
             >
           </li>
         </ul>
+      </div>
 
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg class="menu-icon" width="32" height="32">
-            <use href="./images/icons.svg#icon-hamburger-open"></use>
+      <!--Hamburger-->
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="menu-icon" width="32" height="32">
+          <use href="./images/icons.svg#icon-hamburger-open"></use>
+        </svg>
+      </button>
+
+      <!-- Hamburger Menu Close Icon and Navigations-->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <!-- Hamburger Menu Close Icon-->
+        <button class="menu-toggle js-close-menu">
+          <svg class="close-menu-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-hamburger-close"></use>
           </svg>
         </button>
+        <!--Mobile Navigation-->
+        <ul class="mobile-menu list">
+          <li class="mobile-item">
+            <a class="mobile-link current link" href="./index.html">Studio</a>
+          </li>
+          <li class="mobile-item">
+            <a class="mobile-link link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mobile-item">
+            <a class="mobile-link link" href="#">Contacts</a>
+          </li>
+        </ul>
 
-        <!-- Hamburger Menu Close Icon and Navigations-->
-        <div class="menu-container js-menu-container" id="mobile-menu">
-          <!-- Hamburger Menu Close Icon-->
-          <button class="menu-toggle js-close-menu">
-            <svg width="32" height="32">
-              <use href="./images/icons.svg#icon-hamburger-close"></use>
-            </svg>
-          </button>
-          <!--Mobile Navigation-->
-          <ul class="mobile-menu list">
-            <li class="mobile-item">
-              <a class="mobile-link current link" href="./index.html">Studio</a>
-            </li>
-            <li class="mobile-item">
-              <a class="mobile-link  link" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="mobile-item">
-              <a class="mobile-link link" href="#">Contacts</a>
-            </li>
-          </ul>
-
-          <!--Mobile Address-->
-          <ul class="mobile-address list">
-            <li class="mobile-address-item">
-              <a class="mobile-address-link link" href="tel:+110001111111"
-              >+11(000)111-11-11</a>
-            </li>
-            <li class="mobile-address-item">
-              <a class="mobile-address-link link" href="mailto:info@devstudio.com"
+        <!--Mobile Address-->
+        <ul class="mobile-address list">
+          <li class="mobile-address-item">
+            <a class="mobile-address-link link" href="tel:+110001111111"
+              >+11(000)111-11-11</a
+            >
+          </li>
+          <li class="mobile-address-item">
+            <a class="mobile-address-link link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
-            </li>
-          </ul>
+          </li>
+        </ul>
 
-          <!--Mobile Socials-->
-          <ul class="mobile-socials list">
-            <li class="mobile-socials-item"><a class="mobile-socials-link" href="https://instagram.com/"
+        <!--Mobile Socials-->
+        <ul class="mobile-socials list">
+          <li class="mobile-socials-item">
+            <a
+              class="mobile-socials-link"
+              href="https://instagram.com/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Link to Instagram"
               ><svg class="mobile-socials-icon" width="16" height="16">
                 <use href="./images/icons.svg#icon-instagram"></use></svg
-            ></a></li>
-            <li class="mobile-socials-item"><a class="mobile-socials-link" href="https://twitter.com/" 
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="Link to Twitter">
-                   <svg class="mobile-socials-icon" width="16" height="16">
-                    <use href="./images/icons.svg#icon-twitter"
-               ></use></svg
-          ></a></li>
-            <li class="mobile-socials-item"><a class="mobile-socials-link" href="https://facebook.com/"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="Link to Facebook">
-                   <svg class="mobile-socials-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-facebook"
-                 ></use></svg
-            ></a></li>
-            <li class="mobile-socials-item"><a class="mobile-socials-link" href="https://linkedin.com/"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="Link to Linkedin">
-                   <svg class="mobile-socials-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-linkedin"
-                 ></use></svg
-            ></a></li>
-          </ul>
+            ></a>
+          </li>
+          <li class="mobile-socials-item">
+            <a
+              class="mobile-socials-link"
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to Twitter"
+            >
+              <svg class="mobile-socials-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use></svg
+            ></a>
+          </li>
+          <li class="mobile-socials-item">
+            <a
+              class="mobile-socials-link"
+              href="https://facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to Facebook"
+            >
+              <svg class="mobile-socials-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use></svg
+            ></a>
+          </li>
+          <li class="mobile-socials-item">
+            <a
+              class="mobile-socials-link"
+              href="https://linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to Linkedin"
+            >
+              <svg class="mobile-socials-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use></svg
+            ></a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -206,6 +227,7 @@
           </ul>
         </div>
       </section>
+
       <!--What We Do Section-->
       <section class="section no-top-padding">
         <div class="container">
@@ -557,7 +579,7 @@
 
           <!--Footer 2-->
           <div class="footer-address footer-social-container">
-            <b class="footer-heading">Social media</b>
+            <b class="footer-heading footer-social-title">Social media</b>
             <ul class="social-footer list">
               <li class="icon-item">
                 <a
@@ -618,11 +640,12 @@
                 />
               </label>
               <div class="footer-subscribe-button">
-              <button class="subscribe-button" type="submit">Subscribe<svg class="subscribe-icon" width="24" height="24">
-                <use href="./images/icons.svg#subscribe-icon"></use>
-              </svg></button
-              >
-            </div>
+                <button class="subscribe-button" type="submit">
+                  Subscribe<svg class="subscribe-icon" width="24" height="24">
+                    <use href="./images/icons.svg#subscribe-icon"></use>
+                  </svg>
+                </button>
+              </div>
             </form>
           </div>
         </div>
@@ -666,7 +689,7 @@
             </svg>
           </label>
 
-          <!--Comment-->
+          <!--Comments-->
           <label class="form-field">
             <span class="form-label">Comment</span>
             <textarea
