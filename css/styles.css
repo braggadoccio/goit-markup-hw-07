@@ -148,6 +148,17 @@ body {
   
 }
 
+.contact-link {
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 1158px) {
+    font-size: 16px;
+    
+  }
+}
+
 .page {
   position: relative;
   color: var(--ocean);
@@ -273,6 +284,10 @@ body {
   }
 
   @media screen and (min-width: 768px) {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -343,6 +358,11 @@ body {
   line-height: 1.14;
   margin-bottom: 8px;
   text-align: center;
+
+  @media screen and (min-width: 1158px){
+    font-size: 20px;
+    font-weight: 500;
+  }
 }
 
 .section .benefits {
